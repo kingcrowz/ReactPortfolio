@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/ReactPortfolio/static/css/main.89a6d0ab.chunk.css",
+    "main.js": "/ReactPortfolio/static/js/main.f294506e.chunk.js",
+    "main.js.map": "/ReactPortfolio/static/js/main.f294506e.chunk.js.map",
+    "runtime-main.js": "/ReactPortfolio/static/js/runtime-main.3150cb4c.js",
+    "runtime-main.js.map": "/ReactPortfolio/static/js/runtime-main.3150cb4c.js.map",
+    "static/js/2.c898c1bf.chunk.js": "/ReactPortfolio/static/js/2.c898c1bf.chunk.js",
+    "static/js/2.c898c1bf.chunk.js.map": "/ReactPortfolio/static/js/2.c898c1bf.chunk.js.map",
+    "static/js/3.2b496616.chunk.js": "/ReactPortfolio/static/js/3.2b496616.chunk.js",
+    "static/js/3.2b496616.chunk.js.map": "/ReactPortfolio/static/js/3.2b496616.chunk.js.map",
+    "index.html": "/ReactPortfolio/index.html",
+    "static/css/main.89a6d0ab.chunk.css.map": "/ReactPortfolio/static/css/main.89a6d0ab.chunk.css.map",
+    "static/js/2.c898c1bf.chunk.js.LICENSE.txt": "/ReactPortfolio/static/js/2.c898c1bf.chunk.js.LICENSE.txt",
+    "static/media/Grove.d820e8c5.png": "/ReactPortfolio/static/media/Grove.d820e8c5.png",
+    "static/media/NoteTaker.52142284.png": "/ReactPortfolio/static/media/NoteTaker.52142284.png",
+    "static/media/fitness.052bd1b7.png": "/ReactPortfolio/static/media/fitness.052bd1b7.png",
+    "static/media/movieproject.1357858d.png": "/ReactPortfolio/static/media/movieproject.1357858d.png",
+    "static/media/weather.e924958c.png": "/ReactPortfolio/static/media/weather.e924958c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3150cb4c.js",
+    "static/js/2.c898c1bf.chunk.js",
+    "static/css/main.89a6d0ab.chunk.css",
+    "static/js/main.f294506e.chunk.js"
+  ]
+}
