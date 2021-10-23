@@ -1,0 +1,513 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.bucket-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 800px;
+  min-height: 600px;
+  background: black;
+  text-align: center;
+  margin: 32px auto;
+  border-radius: 20px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+h3 {
+  margin: auto;
+  color: rgb(66, 171, 231);
+  font-size: 20px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.bucket-form {
+  margin-bottom: 32px;
+}
+
+.bucket-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.bucket-input::placeholder {
+  color: #e2e2e2;
+}
+
+.bucket-button {
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  background: #5d0cff;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.bucket-input.edit {
+  border: 2px solid #149fff;
+}
+
+.bucket-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  padding: 16px 22px;
+}
+
+.bucket-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.bucket-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.low {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.medium {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+
+.high {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
+
+/* Dropdown menu */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #ec5700;
+  border-radius: 4px;
+  width: 75px;
+  color: white;
+  padding: 16px;
+  margin: 10px;
+  /* font-size: 16px; */
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 215px;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content p:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #5d0cff;
+}
+
+ */
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* applies base properties to everything contained within the page */
+
+body {
+    background-color: rgb(30, 31, 31);;
+}
+/* Sets background color using hex codes to define color */
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(30, 31, 31);
+    color: #ffffff;
+}
+/* Increase of space between the content and border 
+   Sets up a few different options for font
+   Sets background color using hex codes to define color
+   Sets text color using hex codes to define color*/
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    color: rgb(30, 31, 31);
+    background-color: teal;
+}
+/*Sets up name block of the header, as well as selecting font-size and bkg color.*/
+
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+/* Increase of space between the content and border
+   Increase of space for the right margin to occupy 
+   Brings the nav content to other side to space from Logo
+   Sets up a few different options for font and sets font size */
+
+
+header nav ul li {    
+    display: inline-block;
+    margin-left: 25px;
+    text-align: right;
+}
+/*allows these units to display left to right instead of stacked
+  Increase of space for the left margin to occupy*/
+
+a {
+    /* color: #ffffff; */
+    text-decoration: none;
+}
+/*Uses hex codes to define color
+and removes decoration from nav links*/
+
+section section a {
+    background-color: white;
+}
+/*sets the background color to white for the links on my projects*/
+
+p {
+    font-size: 16px;
+    color:rgb(103, 4, 168);
+}
+/*Changes font size for non-title content*/
+
+footer {
+    width: 100%;
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    display: inline-block;
+    font-size: 48px;
+    color: rgb(30, 31, 31);
+    background-color: teal;
+}
+/* Increase of space between the content and border 
+   Sets up a few different options for font and sets font size
+   Centers the text for the page footing
+*/
+
+footer h2 {
+    font-size: 20px;
+}
+/*Sets font size for the content at the bottom of footer*/
+
+footer ul li {
+    text-decoration: underline;
+    margin-left: 25px;
+    display: inline-block
+    
+}
+/* Underlines the text and increases left margin space */
+
+footer ul li a {
+    text-align: right;
+    color: rgb(30, 31, 31);
+}
+/* Sets text color to black */
+
+.Projects {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    /* background-image: url("../images/Chevron.jpg"); */
+    background-size: cover;
+    background-position: center;
+}
+/*.Projects sets up a background image
+   Sets up a defined height for image and a dynamic width
+   Increases space for the margin to occupy on the bottom
+   Resizes the image to fit a certain size and centers it within the page*/
+
+#projSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Centers content and flexes its direction */
+
+main a {
+    color: teal;
+    font-size: 45px;
+}
+/* Sets text color and font size */
+
+main h2 {
+    display: inline-block;
+    font-size: 48px;
+    color: rgb(30, 31, 31);
+    background-color: teal;
+}
+/* Sets text color, font size, and background color */
+
+section h2 {
+  color:rgb(103, 4, 168);
+}
+
+.holder h2{
+   text-align: center;
+}
+/* Centers the text */
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+/*Pulls content to the left
+ Increases space for the margin to occupy on the right*/
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+/*Pulls content to the right
+ Increases space for the margin to occupy on the left*/
+
+.holder {
+    color: rgb(30, 31, 31);
+    text-align: center;
+    background-color: teal;
+    margin-right: 20px;
+    padding: 20px;
+    width: 70%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 auto;
+}
+/*.benefits is the side content window next to the .content section
+Increase of space between the content and border 
+Increases space for the margin to occupy on the right
+Float:right allows it to apply itself to the right of .content instead of on it own line
+Sets up a maximum width and gives benefits box no maximum height
+Sets up a few different options for font and sets font size
+Sets background color using rbg codes to define color*/
+
+
+.About-Me {
+    margin-bottom: 32px;
+}
+/*Increases space for the margin to occupy on the bottom*/
+
+.About-Me h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* Sets the bottom margin for H3 headers to 10px and centers it */
+
+.About-Me a {
+    color: rgb(30, 31, 31);
+}
+/*Increases space for the margin to occupy on the bottom
+  Aligns the text in the center of the box*/
+
+
+.About-Me img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+/*Display:block centers the image in the box on the X axis
+  Sets up margin values
+  Sets a maximum width for the image to display within
+  All 3 classes within benefits had identical style.css code,
+    so it was consolidated from 3 to 1*/
+
+
+.search-engine-optimization {
+    margin-bottom: 20px;
+    /* padding: 50px; */
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+     color: black; 
+}
+/* Sets up a bottom margin, and padding
+sets a height value of 300px 
+sets up a few font families
+sets up a text and background color*/
+
+
+#search-engine-optimization {
+    width: 250px;
+    height: 200px;
+    /* background-image: url("../images/movieproject.png"); */
+}
+/* Sets up a height, width, and background image */
+
+#online-reputation-management {
+    width: 250px;
+    height: 200px;
+    /* background-image: url("../images/NoteTaker.png"); */
+}
+/* Sets up a height, width, and background image */
+
+#fixed-site {
+    width: 400px;
+    height: 440px;
+    color: black;
+    font-size: 16px;
+    /* background-image: url("../images/Grove.png"); */
+}
+
+
+#fixed-site img {
+  width: 400px;
+  height: 400px;
+  /* background-image: url("../images/Grove.png"); */
+}
+
+
+
+#social-media-marketing {
+    width: 250px;
+    height: 200px;
+    /* background-image: url("../images/Calculator.jpg"); */
+}
+/* Sets up a height, width, and background image */
+
+.row-section{
+    display:flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+
+.row-section img {
+  width: 250px;
+  height: 160px;
+}
+/* sets up properties for the flexbox section */
+
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/* sets up a bottom margin and font size */
+
+.search-engine-optimization:hover{
+    opacity: .75;
+}
+/* on hover, this allows the application boxes to appear as if they are highlighted */
+
+#branImg{
+  height: 75px;
+  width: 75px;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    }
+
+@media screen and (max-width: 1200px) {
+     .row-section {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        flex-direction: column;
+    }
+    }
+            
+  
