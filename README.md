@@ -29,7 +29,7 @@ npm i
 
 # License
 * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-* [![License: ISC](https://img.shields.io/badge/License-ISC-green.svg)](https://opensource.org/licenses/ISC)
+* [![License: APACHE2.0](https://img.shields.io/badge/License-APACHE2.0-green.svg)](https://opensource.org/licenses/APACHE2.0)
 # Questions
 
 # Email
