@@ -5,7 +5,8 @@
 
 This application was designed as a way to slowly start to show off my knowledge of react by inserting it into my own portfolio.
 
-![Screenshot (27)](https://user-images.githubusercontent.com/83981829/137606744-aa2b583a-3e89-4664-a758-a7d70516c50a.png)
+![Screenshot (30)](https://user-images.githubusercontent.com/83981829/138580548-f68fc40c-da79-4791-824a-0c1f3c14e002.png)
+
 
 ## Table of Contents
 * [Description](#Description)
